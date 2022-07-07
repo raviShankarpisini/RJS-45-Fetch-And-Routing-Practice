@@ -1,0 +1,64 @@
+/* Write your CSS code here */
+.blog-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+.blog-item-image {
+  width: 40%;
+}
+.blog-item-link {
+  color: #000000;
+  text-decoration: none;
+}
+.image-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.blog-item-text-container {
+  padding: 15px;
+  width: 60%;
+}
+
+.blog-topic {
+  font-family: 'Roboto';
+
+  font-size: 16px;
+  color: #8e8e8e;
+}
+.blog-title {
+  font-family: 'Roboto';
+
+  font-size: 24px;
+  color: black;
+}
+.author-icon-name-container {
+  display: flex;
+  align-items: center;
+}
+.author {
+  font-family: 'Roboto';
+  font-size: 18px;
+  margin-left: 18px;
+  text-decoration: none white;
+  color: #8e8e8e;
+}
+@media screen and (max-width: 576px) {
+  .blog-item-image {
+    width: 100%;
+    align-self: center;
+  }
+  .blog-item-text-container {
+    padding: 10px;
+    width: 100%;
+    align-self: center;
+  }
+  .blog-item {
+    flex-direction: column;
+  }
+}
